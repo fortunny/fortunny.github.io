@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Первыя страница</title>
+  <title>Первая страница</title>
   <style>
     @media only screen and (max-width: 600px) {
       .container {
@@ -9,7 +9,7 @@
       }
 
       .button {
-        width: 100%;
+        width: 90%; 
         margin-bottom: 10px;
       }
     }
@@ -35,23 +35,23 @@
       color: white;
       border: none;
       border-radius: 50px; 
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
 
     .button:hover {
       background-color: #00bfff;
+      
     }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-  var buttons = document.querySelectorAll('.button');
-  buttons.forEach(function(button) {
-    button.addEventListener('click', function() {
-      window.location.href = 'second.html';
+      var buttons = document.querySelectorAll('.button');
+      buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          window.location.href = 'second.html';
+        });
+      });
     });
-  });
-});
-
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>

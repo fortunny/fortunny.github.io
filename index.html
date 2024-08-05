@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Телеграм App</title>
+  <title>Первыя страница</title>
   <style>
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 90%;
+      }
+
+      .button {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
     body {
       background-color: #f2f2f2;
       font-family: Arial, sans-serif;
@@ -17,14 +28,14 @@
       height: 100vh;
     }
 
-      .button {
+    .button {
       width: 250px;
       height: 65px;
       background-color: lightblue;
       color: white;
       border: none;
-      border-radius: 50px;
-      margin-bottom: 10px; 
+      border-radius: 50px; 
+      margin-bottom: 10px;
     }
 
     .button:hover {
@@ -33,27 +44,28 @@
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var buttons = document.querySelectorAll('.button');
-      buttons.forEach(function(button) {
-        button.addEventListener('click', function() {
-          window.location.href = 'second.html';
-        });
-      });
+  var buttons = document.querySelectorAll('.button');
+  buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      window.location.href = 'second.html';
     });
+  });
+});
+
   </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="container">
-    <button class="button" onclick="goToSecondPage()">Начисление и справки ЗП</button>
-    <button class="button" onclick="goToSecondPage()">Расходы по командировке</button>
-    <button class="button" onclick="goToSecondPage()">Больничные листы</button>
-    <button class="button" onclick="goToSecondPage()">Подотчетные денежные средства</button>
-    <button class="button" onclick="goToSecondPage()">Уровень ЗП и компенсация питания</button>
-    <button class="button" onclick="goToSecondPage()">Исполнительное производство</button>
-    <button class="button" onclick="goToSecondPage()">Организация питания</button>
-    <button class="button" onclick="goToSecondPage()">Организация проживания</button>
-    <button class="button" onclick="goToSecondPage()">Обращение к Генеральному директору</button>
-
+    <button id="button1" class="button" onclick="goToSecondPage()">Начисление и справки ЗП</button>
+    <button id="button2" class="button" onclick="goToSecondPage()">Расходы по командировке</button>
+    <button id="button3" class="button" onclick="goToSecondPage()">Больничные листы</button>
+    <button id="button4" class="button" onclick="goToSecondPage()">Подотчетные денежные средства</button>
+    <button id="button5" class="button" onclick="goToSecondPage()">Уровень ЗП и компенсация питания</button>
+    <button id="button6" class="button" onclick="goToSecondPage()">Исполнительное производство</button>
+    <button id="button7" class="button" onclick="goToSecondPage()">Организация питания</button>
+    <button id="button8" class="button" onclick="goToSecondPage()">Организация проживания</button>
+    <button id="button9" class="button" onclick="goToSecondPage()">Обращение к Генеральному директору</button>
   </div>
 </body>
 </html>

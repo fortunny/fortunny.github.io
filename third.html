@@ -1,24 +1,43 @@
-<!-- third.html -->
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Телеграм App</title>
+  <title>Третья страница</title>
   <style>
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 90%;
+      }
+
+      .message {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+
     body {
       background-color: #f2f2f2;
       font-family: Arial, sans-serif;
       text-align: center;
     }
 
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
     .message {
       font-size: 24px;
-      color: lightblue;
-      margin-top: 200px;
+      margin-bottom: 20px;
     }
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-  <div class="message">Ваше обращение отправлено</div>
+  <div class="container">
+    <p class="message">Ваше обращение отправлено</p>
+  </div>
 </body>
 </html>

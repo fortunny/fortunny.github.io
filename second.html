@@ -1,9 +1,19 @@
-<!-- second.html -->
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Телеграм App</title>
+  <title>Вторая страница</title>
   <style>
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 90%;
+      }
+
+      .input {
+        width: 90%;
+        margin-bottom: 10px;
+      }
+    }
+
     body {
       background-color: #f2f2f2;
       font-family: Arial, sans-serif;
@@ -39,18 +49,19 @@
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var button = document.querySelector('.button');
-      button.addEventListener('click', function() {
-        window.location.href = 'third.html';
-      });
-    });
+  var button = document.querySelector('.button');
+  button.addEventListener('click', function() {
+    window.location.href = 'third.html';
+  });
+});
   </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="container">
-    <input type="text" class="input" placeholder="ФИО">
-    <input type="Number" class="input" placeholder="Контактный номер">
-    <input type="text" class="input" placeholder="Ваше обращение">
+    <input type="text" id="NAME" class="input" placeholder="ФИО">
+    <input type="Number" id="PHONE" class="input" placeholder="Контактный номер">
+    <input type="text" id="ADRESSED" class="input" placeholder="Ваше обращение">
     <button class="button">Далее</button>
   </div>
 </body>
